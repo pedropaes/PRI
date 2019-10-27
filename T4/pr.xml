@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pr>
-    <header>
+    <meta>
         <keyname>T4</keyname>
         <title>Trabalho 4</title>
-        <subtitle>pr</subtitle>
-        <begin-date>21-10-2019</begin-date>
-        <end-date>27-10-2019</end-date>
-        <supervisor>none</supervisor>
-    </header>
-        <team>
-            <nome>Pedro Machado</nome>
-            <numero>a33524</numero>
-        </team>
-        <abstract>Web Server using NodeJS</abstract>
-        <deliverables>
-            <item type="file">arquivo.js</item>
-            <item type="file">doc2html.xsl</item>
-        </deliverables>
+        <subtitle>Web Server</subtitle>
+        <bdate>21/10/2019</bdate>
+        <edate>27/10/2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>a33524</identifier>
+            <name>Pedro Machado</name>
+            <email>pedropaes@gmail.com</email>
+            <photo path="pedro.png"></photo>
+        </member>
+    </workteam>
+    <abstract>
+        <p> <b>NodeJS Webserver</b> 
+            
+        </p>     
+    </abstract>
+    <deliverables>
+        <deliverable path="arquivo.js">arquivo.js</deliverable>
+        <deliverable path="doc2html.xsl">doc2html.xsl</deliverable>
+        <deliverable path="pr.dtd">pr.dtd</deliverable>
+        <deliverable path="pr.xml">pr.xml</deliverable>
+    </deliverables>
 </pr>

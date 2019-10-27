@@ -120,7 +120,7 @@
             <th><xsl:value-of select="identifier"/></th>
             <td><xsl:value-of select="name"/></td>
             <td><xsl:value-of select="email"/></td>
-            <td><img src="{photo/@path}" alt="{name}"/></td>
+            <td><img src="{photo/@path}" alt="{name}" height="70" width="70"/></td>
         </tr>
     </xsl:template>
     
