@@ -1,0 +1,5 @@
+//ARQELEM[CONCEL=' Amares ']/IDENTI
+//CONCEL
+//ARQELEM[CONCEL=' Montalegre ']/DESCRI
+count(//ARQELEM[CONCEL[normalize-space(.) = 'Amares']])
+//ARQELEM/IDENTI[contains(normalize-space(.), "Castro")]

@@ -1,0 +1,11 @@
+{
+  "name": "arquivo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arquivo.js",
+  "scripts": {
+    "test": "node arquivo"
+  },
+  "author": "Pedro Machado",
+  "license": "ISC"
+}

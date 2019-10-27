@@ -1,0 +1,5 @@
+//entrada[telefone[starts-with(.,'253')]]
+//entrada[telefone[not(starts-with(.,'253'))]]
+//entrada[nome[contains(.,'José') or contains (.,'Maria')]]
+/agenda/grupo/entrada/@id
+//entrada[not(@tipo ='pessoa')]

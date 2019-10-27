@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT pr (header,team,abstract,deliverables)>
+
+<!ELEMENT header (key-name,title,subtitle,begin-date,end-date,supervisor)>
+<!ELEMENT key-name (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT begin-date (#PCDATA)>
+<!ELEMENT end-date (#PCDATA)>
+<!ELEMENT supervisor (#PCDATA)>
+
+<!ELEMENT team (number,name)+ >
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT abstract (#PCDATA)>
+
+<!ELEMENT deliverables (item+)>
+<!ELEMENT item (#PCDATA)>
+
+<!ATTLIST item
+          type CDATA #REQUIRED>
