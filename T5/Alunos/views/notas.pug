@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    .w3-container
+            .w3-card-4
+                header.w3-container.w3-indigo
+                    h3 Inserir Nota
+                .w3-container
+                    form.w3-container(action='/alunos' method='POST')
+                        label
+                            b Designacao
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='designacao')
+                        label 
+                            b Nota
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='nota')
+
+                        input.w3-btn.w3-blue-grey(type='submit' value='Inserir')
+            .w3-card-4
+                table.w3-table-all
+                    tr
+                        th Número
+                        th Nome
+                        th Curso
+                        th Operações
+                    each a in turma
+                        tr
+                            td= a.numero
+                            td= a.nome
+                            td= a.curso
+                            td 
+                                a(href="/alunos/" + a.numero + "/")
+                                  button.w3-button.w3-circle.w3-deep-purple Ver Notas
+                                button.w3-button.w3-circle.w3-deep-purple(onclick="apagaItem('" + a.numero + "')") Apagar
+            footer.w3-container.w3-indigo
+                address .:Gerado por Alunos App:.

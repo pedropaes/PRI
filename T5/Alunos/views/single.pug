@@ -1,0 +1,46 @@
+extends layout
+
+block content
+    .w3-container
+            .w3-card-4
+                header.w3-container.w3-indigo
+                    h3 Pauta de Notas Indivual                    
+            .w3-card-4
+                table.w3-table-all
+                    tr
+                        th Número
+                        th Nome
+                        th Curso
+                    tr
+                        td #{aluno.numero}  
+                        td #{aluno.nome} 
+                        td #{aluno.curso}
+            .w3-card-4
+                header.w3-container.w3-indigo
+                    h3 Inserir Nota
+                .w3-container
+                    form.w3-container(action="/alunos/"+ aluno.numero + "/notas/"  method='POST')
+                        label
+                            b Designacao
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='designacao')
+                        label 
+                            b Nota
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='nota')
+
+                        input.w3-btn.w3-blue-grey(type='submit' value='Inserir')            
+            .w3-card-4
+                table.w3-table-all
+                    tr
+                        th Designacao
+                        th Nota
+                        th Operações
+                    each n in aluno.notas
+                        tr
+                            td= n.designacao
+                            td= n.nota
+                            td 
+                                a(href="/alunos/" + aluno.numero + "/notas/" + n.designacao + "/")
+                                  button.w3-button.w3-circle.w3-blue-grey Ver Notas
+                                button.w3-button.w3-circle.w3-blue-grey(onclick="apagaNota('" + aluno.numero + "','" + n.designacao + "')") Apagar
+            footer.w3-container.w3-indigo
+                address .:Gerado por Alunos App:.
