@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    .w3-container
+            .w3-card-4
+                header.w3-container.w3-indigo
+                    h3 #{filme.title}
+            .w3-card-4
+                table.w3-table-all
+                    tr
+                        th Id
+                        td #{filme._id}  
+                    tr
+                        th Título
+                        td #{filme.title}
+                    tr
+                        th Ano
+                        td #{filme.year}         
+            .w3-card-4
+                table.w3-table-all
+                    tr
+                        th Elenco
+                        each a in filme.cast
+                            td= a
+            .w3-card-4
+                table.w3-table-all
+                    tr
+                        th Géneros
+                        each g in filme.genres
+                            td= g
+            footer.w3-container.w3-indigo
+                address .:Gerado por Movies App:.

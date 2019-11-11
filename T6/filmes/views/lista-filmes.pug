@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    .w3-container
+            h1 Lista de filmes
+            table.w3-table-all
+                tr
+                    th Título
+                    th Ano
+                    th Operações
+                each filme in lista
+                    tr
+                        td
+                            a(href="/filmes/" + filme._id + "/") #{filme.title}
+                        td= filme.year
+                        td
+                            button.w3-button.w3-circle.w3-blue-grey(onclick="apagaItem('" + filme._id + "')") Apagar

@@ -1,0 +1,46 @@
+extends layout
+
+block content
+    .w3-container
+      h1 Inserção de um Filme
+      script(type="text/javascript").
+              $(document).ready(function(){
+                $("#add-elenco").click(function(e){
+                  e.preventDefault();
+                  var numero = $("#form1").find("input[name^='cast']").length;
+                  var label = '<label for="cast[' + numero + ']">Actor ' + (numero + 1) + '</label> ';
+                  var input = '<input type="text" name="cast" id="[elenco][' + numero + ']" />';
+                  var removeButton = '<button class="remove-elenco" onclick="return false">Remove</button>';
+                  var html = "<div class='elenco'>" + label + input  + "</div>";
+                  $("#form1").find("#add-elenco").before(html);
+                }); 
+              });
+              
+
+              $(document).ready(function(){
+              $("#add-genre").click(function(f){
+                  f.preventDefault();
+                  var numero2 = $("#form1").find("input[name^='genres']").length;
+                  var label2 = '<label for="genres[' + numero2 + ']">Género ' + (numero2 + 1) + '</label> ';
+                  var input2 = '<input type="text" name="genres" id="[genre][' + numero2 + ']" />';
+                  var html2 = "<div class='actor'>" + label2 + input2 + "</div>";
+                  $("#form1").find("#add-genre").before(html2);
+                });
+              });
+
+      form.w3-container(id="form1" action="/filmes" method="post")
+        label Título:
+        input.w3-input(type="text" name="title")
+        label Ano:
+        input.w3-input(type="text" name="year")
+        div(class="elenco")
+          label Elenco:
+          input.w3-input(type="text" name="cast" id="elenco[0]")
+        input(id="add-elenco" value="Adicionar Actor" type="button" onclick="return false")   
+        div(class="genres")
+          label Géneros:
+          input.w3-input(type="text" name="genres" id="genre[0]") 
+        input(id="add-genre" value="Adicionar Genero" type="button" onclick="return false") 
+          
+        input.w3-input(type="submit" value="Enviar")
+        
