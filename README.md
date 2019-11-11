@@ -13,8 +13,8 @@ XSL Transformations
 NodeJS File Server using XSL
 
 ### T5
-ExpressJs File Server with JSON persistency
+ExpressJs Server with JSON persistency
 
 
 ### T6
-ExpressJs File Server with mongoDB 
+ExpressJs Server with mongoDB 
