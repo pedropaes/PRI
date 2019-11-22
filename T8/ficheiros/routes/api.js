@@ -29,7 +29,6 @@ router.post('/ficheiros', upload.array('ficheiro'), function(req,res){
         file = req.files[i];
         if(req.files.length == 1) body = req.body.desc[i]
         else body = req.body.desc;
-        console.log('body>>>>' + body)
         oldPath = __dirname + '/../' + file.path
         newPath = __dirname + '\\..\\data\\' + file.originalname
 
