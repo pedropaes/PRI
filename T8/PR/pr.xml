@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>T8</keyname>
+        <title>Trabalho 8</title>
+        <subtitle>File Server</subtitle>
+        <bdate>19/11/2019</bdate>
+        <edate>22/11/2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>a33524</identifier>
+            <name>Pedro Machado</name>
+            <email>pedropaes@gmail.com</email>
+            <photo path="pedro.png"></photo>
+        </member>
+    </workteam>
+    <abstract>
+        <p>File server using <b>Express JS</b>, hosts files using mongodb persistency and also has preview available for images.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/pedropaes/PRI/tree/master/T8">Github</deliverable>
+    </deliverables>
+</pr>
