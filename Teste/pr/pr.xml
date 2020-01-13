@@ -24,6 +24,9 @@
        Questão 1 e 2
     </abstract>
     <deliverables>
-        <deliverable path="https://github.com/pedropaes/PRI/tree/master/T8">Github</deliverable>
+        <deliverable path="https://github.com/pedropaes/PRI/blob/master/Teste/Questao1.txt">Questão 1</deliverable>
+	<deliverable path="https://github.com/pedropaes/PRI/blob/master/Teste/Questao2.txt">Questão 2</deliverable>
+	<deliverable path="https://github.com/pedropaes/PRI/tree/master/Teste/Api">Api</deliverable>
+	<deliverable path="https://github.com/pedropaes/PRI/tree/master/Teste/Clav">Clav</deliverable>
     </deliverables>
 </pr>
