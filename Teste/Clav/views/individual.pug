@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  .w3-container
+            h1 #{tip.sigla}
+            table.w3-table-all
+                tr
+                    th Campo
+                    th Informação
+                tr
+                    td Estado
+                    td= tip.estado
+                tr
+                    td Sigla
+                    td= tip.sigla
+                tr
+                    td Designacao
+                    td= tip.designacao
+                
+                tr 
+                    td Composição(s)
+                    td
+                        ul
+                            if(tip.dono.length >0)
+                                each e in tip.dono
+                                    li
+                                        a(href="/tipologias/" + e.id + "/") #{e.id}
+                tr
+                    td Processos(s)
+                        ul
+                            if(tip.dono.length >0)
+                                each d in tip.dono
+                                    li
+                                        a(href="/tipologias/" + d.id + "/") #{d.id}
+                tr
+                    td Processos(s) em que participa
+                        ul
+                            if(tip.dono.length >0)
+                                each p in tip.participante
+                                    li
+                                        a(href="/tipologias/" + p.id + "/") #{p.id}
+            a(href="/") Voltar ao Índice

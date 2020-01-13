@@ -1,0 +1,30 @@
+Questões acerca da Api:
+1) Estão catalogadas 78 tipologias
+2) À tipologia tip_FSS pertencem 5 entidades
+3) Assumi que participar como comunicador implicava que seria intervenção como participante
+        "id": "c150.30.001"
+        "id": "c550.10.600"
+        "id": "c550.20.003"
+        "id": "c550.20.006"
+        "id": "c550.20.501"
+        "id": "c550.30.003"
+        "id": "c650.10.019"
+        "id": "c650.10.020"
+        "id": "c650.10.212"
+        "id": "c650.10.213"
+        "id": "c750.10.001"
+        "id": "c200.30.001"
+        "id": "c550.10.002"
+        "id": "c550.20.500"
+
+4) A entidade ent_SEF pertence às seguintes tipologias:
+    {
+        "sigla": "AP",
+        "designacao": "Administração Pública",
+        "id": "tip_AP"
+    },
+    {
+        "sigla": "FSS",
+        "designacao": "Forças e serviços de segurança",
+        "id": "tip_FSS"
+    }

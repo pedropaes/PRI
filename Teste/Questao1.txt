@@ -1,0 +1,4 @@
+O método de persistência usada foi a base de dados em MongoDB.
+
+Após a validação do json recorrendo a uma ferramenta online, o dataset foi importado para o mongo usando o seguinte comando:
+mongoimport -d pubs -c pubs --jsonArray jcrpubs.json

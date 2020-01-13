@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>Teste de Avaliação 19/20</keyname>
+        <title>Avaliação</title>
+        <subtitle>Api + Interface</subtitle>
+        <bdate>13/01/2020</bdate>
+        <edate>13/11/2020</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>a33524</identifier>
+            <name>Pedro Machado</name>
+            <email>pedropaes@gmail.com</email>
+            <photo path="pedro.png"></photo>
+        </member>
+    </workteam>
+    <abstract>
+       Questão 1 e 2
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/pedropaes/PRI/tree/master/T8">Github</deliverable>
+    </deliverables>
+</pr>
